@@ -428,10 +428,10 @@ KEY mode name, for reference only. Easier to do lookups and/or replacements.
 
          (prefix (cond ((eq nano-modeline-prefix 'none) nil)
                        ((eq nano-modeline-prefix 'icon) icon)
-                       (t (cond ((eq status 'read-only)  "RO")
-                                ((eq status 'read-write) "RW")
-                                ((eq status 'modified)   "**")
-                                (t                       "--")))))
+                       (t (cond ((eq status 'read-only)  "RO  ")
+                                ((eq status 'read-write) "RW  ")
+                                ((eq status 'modified)   "**  ")
+                                (t                       "--  ")))))
 
          (face-modeline (if active
                             'nano-modeline-active
